@@ -1,0 +1,262 @@
+/* @font-face {
+    font-family: "Hiragino Sans GB"; 
+    src: url("//db.onlinewebfonts.com/t/3f086dbc376893f56b4a9c4d3cac5df9.eot"); 
+    src: url("//db.onlinewebfonts.com/t/3f086dbc376893f56b4a9c4d3cac5df9.eot?#iefix") format("embedded-opentype"), 
+    url("//db.onlinewebfonts.com/t/3f086dbc376893f56b4a9c4d3cac5df9.woff2") format("woff2"), 
+    url("//db.onlinewebfonts.com/t/3f086dbc376893f56b4a9c4d3cac5df9.woff") format("woff"), 
+    url("//db.onlinewebfonts.com/t/3f086dbc376893f56b4a9c4d3cac5df9.ttf") format("truetype"), 
+    url("//db.onlinewebfonts.com/t/3f086dbc376893f56b4a9c4d3cac5df9.svg#Hiragino Sans GB") format("svg"); 
+} */
+
+:root {
+    --desktop_width: 1200px;
+    --tablet_width: 900px;
+
+    --font_blue: #37A0C8;
+    --font_green: #19A591;
+}
+  
+
+html, body {
+    font-family: "Hiragino Sans GB";
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* header */
+header {
+    display: flex;
+    align-items: center;
+    width: var(--desktop_width);
+    margin: auto;
+    box-sizing: border-box;
+}
+
+header .logo-container {
+    width: 40%;
+}
+
+header .logo-container img {
+    margin: 5px 0;
+    width: 150px;
+}
+
+header nav {
+    flex: 1;
+}
+
+header nav .main-nav {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+}
+
+header nav .main-nav li a {
+    display: block;
+    color: #000;
+    font-size: 14px;
+    text-align: center;
+}
+
+@media(max-width: 1200px) {
+    header {
+        width: var(--tablet_width);
+    }
+}
+
+@media(max-width: 900px) {
+    header {
+        display: block;
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    header .logo-container {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    header nav {
+        width: 100%;
+    }
+}
+
+/* BODY */
+#main-content {
+    width: var(--desktop_width);
+    margin: auto;
+    box-sizing: border-box;
+}
+
+/* NEWS */
+section#news .news-head{
+    color: var(--font_blue);
+}
+
+section#news .news-list{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+section#news .news-list li {
+    display: flex;
+    border-top: 1px solid var(--font_blue);
+    border-bottom: 1px solid var(--font_blue);
+    align-items: center;
+}
+
+section#news .news-list li .date-lbl {
+    width: 150px;
+}
+
+section#news .news-list li .title-lbl {
+    flex: 1;
+}
+
+/* INTRO */
+section#intro .detail-item .detail-panel {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 30px;
+    position: relative;
+    padding: 30px 0;
+}
+
+section#intro .detail-item:nth-child(odd) .detail-panel {
+    flex-direction: row;
+}
+
+section#intro .detail-item:nth-child(odd) .detail-panel:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 80%;
+    background-color: #EDF8FD;
+    z-index: -9;
+}
+
+section#intro .detail-item:nth-child(even) .detail-panel {
+    flex-direction: row-reverse;
+}
+
+section#intro .detail-item:nth-child(even) .detail-panel:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: 80%;
+    background-color: #EDF8FD;
+    z-index: -9;
+}
+
+section#intro .detail-item .detail-panel .panel-description-title {
+    flex: 1;
+}
+
+section#intro .detail-item:nth-child(odd) .detail-panel .panel-description-title {
+    padding-right: 30px;
+}
+
+section#intro .detail-item:nth-child(even) .detail-panel .panel-description-title {
+    padding-left: 30px;
+}
+
+section#intro .detail-item .detail-panel .panel-image {
+    width: 400px;
+}
+
+section#intro .detail-item .detail-panel .panel-image img {
+    width: 100%;
+}
+
+section#intro .detail-item .detail-panel .panel-description-title h4 {
+    color:  var(--font_blue);
+    font-size: 1.5em;
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
+section#intro .detail-item .detail-panel .panel-description-title p {
+    font-weight: bold;
+    color: #000;
+}
+
+section#intro .detail-item .do-you-know {
+    color:  var(--font_green);
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    padding: 30px 100px;
+}
+
+section#intro .detail-item .do-you-know .highlight {position: relative;}
+section#intro .detail-item .do-you-know .highlight:before{
+    content: "";
+    z-index: -9;
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    height: 80%;
+    left: -3px;
+    background-color: #fdd2b1;
+    padding: 0 5px;
+}
+
+@media(max-width: 768px) {
+    section#intro .detail-item .detail-panel {
+        display: block;
+        text-align: center;
+    }
+
+    section#intro .detail-item .detail-panel .panel-image {
+        width: 100%;
+    }
+
+    section#intro .detail-item .detail-panel .panel-image img {
+        width: calc(100% - 40px);
+        text-align: center;
+    }
+
+    section#intro .detail-item .detail-panel:before {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 100%;
+        width: 100% !important;
+        background-color: #EDF8FD;
+        z-index: -9;
+    }
+}
+  
+
+@media(max-width: 1200px) {
+    #main-content {
+        width: var(--tablet_width);
+    }
+}
+
+@media(max-width: 900px) {
+    #main-content {
+        display: block;
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+
+@media(max-width: 768px) {
+    .full-mobile {
+        width: calc(100% + 40px);
+        margin-left: -20px;
+    }
+}
