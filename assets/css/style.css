@@ -20,6 +20,7 @@
 html, body {
     font-family: "Hiragino Sans GB";
     margin: 0px;
+    overflow-x: hidden;
 }
 
 a {
@@ -238,11 +239,23 @@ section#intro .detail-item .do-you-know .highlight:before{
         z-index: -9;
     }
 }
+
+.section-action {
+    background-color: #CCCCCC;
+    height: 100px;
+    width: calc(100% + (100vw - var(--desktop_width)));
+    margin-left: calc(-1 * ((100vw - var(--desktop_width)) / 2));
+}
   
 
 @media(max-width: 1200px) {
     #main-content {
         width: var(--tablet_width);
+    }
+
+    .section-action {
+        width: calc(100% + (100vw - var(--tablet_width)));
+        margin-left: calc(-1 * ((100vw - var(--tablet_width)) / 2));
     }
 }
 
@@ -251,6 +264,11 @@ section#intro .detail-item .do-you-know .highlight:before{
         display: block;
         width: 100%;
         padding: 0 20px;
+    }
+
+    .section-action {
+        width: calc(100% + 40px);
+        margin-left: -20px;
     }
 }
 
