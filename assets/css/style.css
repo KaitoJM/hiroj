@@ -95,6 +95,60 @@ header nav .main-nav li a {
     box-sizing: border-box;
 }
 
+/* COVER */
+section#cover-image {
+    margin-bottom: 30px;
+    position: relative;
+    width: calc((100% + (100vw - var(--desktop_width)) - (100vw - var(--desktop_width)) / 2));
+}
+
+section#cover-image .cover-background {
+    width: 80%;
+    margin-left: 20%;
+    border-radius: 250px;
+}
+
+section#cover-image .cover-map {
+    width: 35%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+section#cover-image .cover-caption-container {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 200px;
+    background-color: #e2f7ff8a;
+    z-index: 99;
+    padding: 10px;
+}
+
+section#cover-image .cover-caption-container .caption {
+    margin-top: -75px;
+}
+
+section#cover-image .cover-caption-container .caption p {
+    font-size: 1.7em;
+    color: #000;
+    font-weight: bold;
+    margin: 0px;
+    text-shadow: -1px 1px 2px #fff, 1px 1px 2px #fff, 1px -1px 0 #fff, -1px -1px 0 #fff;
+}
+
+section#cover-image .cover-caption-container .caption h1 {
+    color: var(--font_blue);
+    font-size: 5em;
+    margin: 0px;
+    font-weight: bold;
+    -webkit-text-stroke: 2px #fff;
+}
+
+@media(max-width: 1200px) {
+}
+
 /* NEWS */
 section#news .news-head{
     color: var(--font_blue);
