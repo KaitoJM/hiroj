@@ -45,6 +45,28 @@ header .logo-container img {
     width: 150px;
 }
 
+header .m-center-caption {
+    color: var(--font_blue);
+    font-size: 0.8em;
+    display: none;
+}
+
+header .btn-menu-toggle {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    color: #000;
+    width: 55px;
+    padding: 5px;
+    font-size: 0.7em;
+    display: none;
+}
+
+header .btn-menu-toggle img {
+    width: 100% !important;
+    margin: 0px !important;
+}
+
 header nav {
     flex: 1;
 }
@@ -85,6 +107,68 @@ header nav .main-nav li a {
 
     header nav {
         width: 100%;
+    }
+}
+
+@media(max-width: 768px) {
+    header .logo-container {
+        width: 100%;
+        text-align: left;
+        margin-top: 5px;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header .logo-container img {
+        margin: 5px 0;
+        width: 100px;
+    }
+
+    header .m-center-caption {display: block;}
+
+    header .btn-menu-toggle {
+        display: block;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    header nav.open {
+        display: block;
+    }
+    
+    header nav .main-nav {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 41px;
+        left: 0px;
+        width: 100%;
+        height: 400px;
+        z-index: 999;
+        background: #edfaffd9;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 20px;
+        box-sizing: border-box;
+    }
+    
+    header nav .main-nav li {
+        border-bottom: 2px solid var(--font_blue);
+        width: 100%;
+    }
+
+    header nav .main-nav li:first-child {
+        border-top: 2px solid var(--font_blue);
+    }
+
+    header nav .main-nav li a {
+        font-weight: bold;
+        padding: 15px;
     }
 }
 
