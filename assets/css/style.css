@@ -460,6 +460,14 @@ section#intro .detail-item .do-you-know .highlight:before{
         background-color: #EDF8FD;
         z-index: -9;
     }
+
+    section#intro .detail-item .detail-panel .panel-description-title {
+        padding: 0px 20px !important;
+    }
+
+    section#intro .detail-item .do-you-know {
+        padding: 30px 50px;
+    }
 }
 
 .section-action {
