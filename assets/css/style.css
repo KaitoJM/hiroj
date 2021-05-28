@@ -471,10 +471,91 @@ section#intro .detail-item .do-you-know .highlight:before{
 }
 
 .section-action {
-    background-color: #CCCCCC;
-    height: 100px;
-    width: calc(100% + (100vw - var(--desktop_width)));
+    background-color: #cccccc59;
+    width: 100vw;
     margin-left: calc(-1 * ((100vw - var(--desktop_width)) / 2));
+    padding: 20px calc((100vw - var(--desktop_width)) / 2);
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+.section-action .action-btn {
+    background-color: #F87F22;
+    color: #fff;
+    display: block;
+    width: 50%;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    height: 80px;
+    line-height: 80px;
+}
+
+.section-action .action-label {
+    display: block;
+    text-align: left;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-left: 30px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.section-action .action-label p {
+    margin: 0px;
+}
+
+.section-action .action-label p span {
+    display: block;
+}
+
+@media(max-width: 1200px) {
+    .section-action {
+        margin-left: calc(-1 * ((100vw - var(--tablet_width)) / 2));
+        padding: 20px calc((100vw - var(--tablet_width)) / 2);
+    }
+}
+
+@media(max-width: 900px) {
+    .section-action {
+        width: calc(100% + 40px);
+        padding: 15px 20px;
+        margin-left: -20px;
+        flex-direction: column-reverse;
+    }
+
+    .section-action .action-btn {
+        width: 100%;
+        font-size: 1.4em;
+        height: 60px;
+        line-height: 60px;
+    }
+
+    .section-action .action-label {
+        font-size: 1em;
+        margin-left: 0px;
+        justify-content: center;
+    }
+
+    .section-action .action-label p {
+        margin: 0px;
+        width: 100%;
+        flex: 1;
+    }
+
+    .section-action .action-label p span {
+        display: inline-block;
+    }
+}
+
+
+.section-full {
+    width: 100vw;
+    margin-left: calc(-1 * ((100vw - var(--desktop_width)) / 2));
+    padding: 20px calc((100vw - var(--desktop_width)) / 2);
+    box-sizing: border-box;
 }
   
 
@@ -483,8 +564,7 @@ section#intro .detail-item .do-you-know .highlight:before{
         width: var(--tablet_width);
     }
 
-    .section-action {
-        width: calc(100% + (100vw - var(--tablet_width)));
+    .section-full {
         margin-left: calc(-1 * ((100vw - var(--tablet_width)) / 2));
     }
 }
@@ -496,8 +576,9 @@ section#intro .detail-item .do-you-know .highlight:before{
         padding: 0 20px;
     }
 
-    .section-action {
+    .section-full {
         width: calc(100% + 40px);
+        padding: 10px 20px;
         margin-left: -20px;
     }
 }
