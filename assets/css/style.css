@@ -636,6 +636,8 @@ section#ph-entry-status .note-container {
 
 section.striped-section {
     background-color: #e9f9ff;
+    background-image: url('../images/stripte.png');
+    background-repeat: repeat;
 }
 
 section.striped-section .section-container {
