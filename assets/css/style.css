@@ -46,9 +46,28 @@ p {
     margin: 0px;
 }
 
+.bged-title {
+    background-color: var(--font_green);
+    display: block;
+    padding: 15px;
+    color: #fff;
+    text-align: center;
+    margin: 50px 0;
+}
+
 @media(max-width: 768px) {
     .sub-titles {
         font-size: 1em;
+    }
+
+    .title-green {
+        font-size: 1em;
+    }
+
+    .bged-title {
+        font-size: 1.2em;
+        padding: 5px 15px;
+        margin: 30px 0;
     }
 }
 
@@ -737,6 +756,57 @@ section.note-section .note-details .note-image img {
     width: 100%;
 }
 
+section.note-section .list-item {
+    background-color: #EDF8FD;
+    display: flex;
+    padding: 15px;
+    margin: 30px 0;
+    align-items: flex-start;
+    position: relative;
+}
+
+section.note-section .list-item .numbering {
+    margin-left: 20px;
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: var(--font_green);
+    text-align: center;
+    border-radius: 50%;
+    box-sizing: border-box;
+    line-height: 50px;
+    font-size: 2em;
+    font-weight: bold;
+    color: #fff;
+    margin-right: 15px;
+}
+
+section.note-section .list-item .item-details {
+    flex: 1;
+}
+
+section.note-section .list-item .item-details .list-title {
+    margin: 0px;
+    font-size: 2em;
+}
+
+section.note-section .list-item .ribbon {
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    width: 150px;
+    background-color: #F87F22;
+    color: #fff;
+    padding: 3px 15px;
+}
+
+section.note-section .list-item .ribbon img {
+    position: absolute;
+    bottom: 0px;
+    right: 5px;
+    width: 35px;
+}
+
 @media(max-width: 768px) {
     section.note-section .title-green {
         margin: 60px 0;
@@ -757,6 +827,11 @@ section.note-section .note-details .note-image img {
         flex-direction: column;
     }
 
+    section.note-section .note-details.reversed {
+        padding: 30px 0;
+        flex-direction: column-reverse;
+    }
+
     section.note-section .note-details .details-container {
         margin: 0px;
     }
@@ -767,6 +842,25 @@ section.note-section .note-details .note-image img {
 
     section.note-section .note-details .note-image {
         width: 100%;
+    }
+
+    section.note-section .list-item {
+        flex-direction: column;
+        margin: 20px 0;
+    }
+
+    section.note-section .list-item .numbering {
+        margin-left: 0px;
+        display: block;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 1.5em;
+    }
+
+    section.note-section .list-item .item-details .list-title {
+        font-size: 1.2em;
+        margin-top: 15px;
     }
 }
 
