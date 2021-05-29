@@ -540,10 +540,15 @@ section#intro .detail-item .do-you-know .highlight:before{
 
 .section-action .action-label p {
     margin: 0px;
+    flex: 1;
 }
 
 .section-action .action-label p span {
     display: block;
+}
+
+.section-action .action-label .action-img {
+    margin: -20px 0;
 }
 
 @media(max-width: 1200px) {
@@ -582,6 +587,11 @@ section#intro .detail-item .do-you-know .highlight:before{
 
     .section-action .action-label p span {
         display: inline-block;
+    }
+
+    .section-action .action-label .action-img {
+        margin: 0;
+        width: 80px;
     }
 }
 
