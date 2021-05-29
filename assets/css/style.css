@@ -197,6 +197,16 @@ header nav .main-nav li a {
     box-sizing: border-box;
 }
 
+.section-container {
+    margin: 80px 0;
+}
+
+@media(max-width: 768px) {
+    .section-container {
+        margin: 50px 0;
+    }
+}
+
 /* COVER */
 section#cover-image {
     margin-bottom: 30px;
@@ -612,7 +622,7 @@ section.striped-section {
 }
 
 section.striped-section .section-container {
-    margin: 80px 0;
+    margin-bottom: 50px;
 }
 
 section.striped-section .section-container .box {
@@ -623,15 +633,49 @@ section.striped-section .section-container .box {
 }
 
 @media(max-width: 768px) {
-    section.striped-section .section-container {
-        margin: 50px 0;
-    }
-
     section.striped-section .section-container .box {
         padding: 15px;
     }
 }
 
+section#visa-info .section-container {
+    display: flex;
+    align-items: flex-start;
+}
+
+section#visa-info .section-container .visa-info-description {
+    flex: 1;
+    margin-right: 50px;
+}
+
+section#visa-info .section-container .visa-info-img {
+    width: 400px;
+    box-sizing: border-box;
+}
+
+section#visa-info .section-container .visa-info-img img {
+    width: 100%;
+}
+
+@media(max-width: 768px) {
+    section#visa-info .section-container {
+        flex-direction: column;
+        margin-top: 15px;
+    }
+    
+    section#visa-info .section-container .sub-titles {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    section#visa-info .section-container .visa-info-description {
+        margin-right: 0px;
+    }
+
+    section#visa-info .section-container .visa-info-img {
+        width: 100%;
+    }
+}
 
 .section-full {
     width: 100vw;
