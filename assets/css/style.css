@@ -34,7 +34,7 @@ p {
 
 .sub-titles {
     color: var(--font_blue);
-    font-size: 1.7em;
+    font-size: 1.8em;
     font-weight: bold;
     margin: 0px;
 }
@@ -868,6 +868,34 @@ section.note-section .list-item .ribbon img {
 section#section-however .title-green {text-align: center;}
 @media(max-width: 768px) {
     section#section-however .title-green {margin:30px 0;}
+}
+
+section#section-more-details {
+
+}
+
+section#section-more-details .box {
+    font-size: 1.5em;
+}
+
+@media(max-width: 768px) {
+    section#section-more-details {
+        margin-top: -50px;
+    }
+
+    section#section-more-details .sub-titles {
+        text-align: center;
+    }
+
+    section#section-more-details .box {
+        font-size: 1.2em;
+        margin-top: 0px;
+        padding: 15px 30px;
+    }
+
+    section#section-more-details p {
+        font-size: 0.7em
+    }
 }
 
 .section-full {
