@@ -543,6 +543,10 @@ section#intro .detail-item .do-you-know .highlight:before{
         text-align: center;
     }
 
+    section#intro .detail-item .detail-panel .panel-description-title h4 {
+        font-size: 1.2em;
+    }
+
     section#intro .detail-item .detail-panel:before {
         content: "";
         position: absolute;
@@ -559,6 +563,7 @@ section#intro .detail-item .do-you-know .highlight:before{
     }
 
     section#intro .detail-item .do-you-know {
+        font-size: 1.2em;
         padding: 30px 50px;
     }
 }
