@@ -33,7 +33,7 @@
   
 
 html, body {
-    font-family: Hiragino;
+    font-family: Hiragino, sans-serif;
     margin: 0px;
     overflow-x: hidden;
 }
