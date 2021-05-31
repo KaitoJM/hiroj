@@ -18,8 +18,9 @@
   
 
 html, body {
-    font-family: "calibri";
+    font-family: sans-serif;
     margin: 0px;
+    font-weight: 600;
     overflow-x: hidden;
 }
 
