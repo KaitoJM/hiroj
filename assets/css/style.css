@@ -18,7 +18,7 @@
   
 
 html, body {
-    font-family: "Hiragino Sans GB";
+    font-family: "calibri";
     margin: 0px;
     overflow-x: hidden;
 }
@@ -261,7 +261,6 @@ section#cover-image {
 section#cover-image .cover-background {
     width: 80%;
     margin-left: 20%;
-    border-radius: 250px;
 }
 
 section#cover-image .cover-caption-container {
@@ -277,7 +276,7 @@ section#cover-image .cover-caption-container {
 }
 
 section#cover-image .cover-caption-container .cover-map {
-    width: 35%;
+    width: 40%;
     position: absolute;
     bottom: 130px;
     left: 0px;
@@ -309,11 +308,7 @@ section#cover-image .cover-caption-container .caption h1 {
     section#cover-image {
         width: calc((100% + (100vw - var(--tablet_width)) - (100vw - var(--tablet_width)) / 2));
     }
-    
-    section#cover-image .cover-background {
-        border-radius: 180px;
-    }
-    
+       
     section#cover-image .cover-caption-container {
         height: 150px;
     }
@@ -339,10 +334,6 @@ section#cover-image .cover-caption-container .caption h1 {
     section#cover-image {
         width: calc(100% + 40px);
         margin-left: -20px;
-    }
-
-    section#cover-image .cover-background {
-        border-radius: 130px;
     }
 
     section#cover-image .cover-caption-container .cover-map {
@@ -633,7 +624,7 @@ section#intro .detail-item .do-you-know .highlight:before{
 }
 
 section#ph-entry-status {
-    background-image: url('../images/board.jpg');
+    background-image: url('../images/board.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -810,19 +801,8 @@ section.note-section .list-item .item-details .list-title {
 
 section.note-section .list-item .ribbon {
     position: absolute;
-    top: 20px;
+    top: 0px;
     right: 0px;
-    width: 150px;
-    background-color: #F87F22;
-    color: #fff;
-    padding: 3px 15px;
-}
-
-section.note-section .list-item .ribbon img {
-    position: absolute;
-    bottom: 0px;
-    right: 5px;
-    width: 35px;
 }
 
 @media(max-width: 768px) {
