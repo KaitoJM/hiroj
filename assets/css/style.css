@@ -385,6 +385,7 @@ section#cover-image .cover-caption-container .caption h1 {
         right: 0px;
         left: auto;
         height: 400px;
+        margin-right: -90px;
     }
     
     section#cover-image .cover-caption-container .caption {
